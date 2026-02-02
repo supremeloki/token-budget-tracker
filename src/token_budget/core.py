@@ -28,3 +28,4 @@ class Role(str, Enum):
 
 
 def estimate_tokens(text: str) -> int:
+    if not text:
