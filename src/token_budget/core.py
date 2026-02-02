@@ -26,3 +26,5 @@ class Role(str, Enum):
     ASSISTANT = "assistant"
     TOOL = "tool"
 
+
+def estimate_tokens(text: str) -> int:
