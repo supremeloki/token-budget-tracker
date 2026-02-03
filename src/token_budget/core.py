@@ -30,3 +30,5 @@ class Role(str, Enum):
 def estimate_tokens(text: str) -> int:
     if not text:
         return 0
+    words = len(text.split())
+    return max(1, round(words * 1.35))
