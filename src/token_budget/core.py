@@ -38,3 +38,4 @@ def estimate_tokens(text: str) -> int:
 class UsageRecord:
     category: str
     role: Role
+    tokens: int
