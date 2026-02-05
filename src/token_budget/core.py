@@ -35,3 +35,4 @@ def estimate_tokens(text: str) -> int:
 
 
 @dataclass(frozen=True)
+class UsageRecord:
