@@ -33,3 +33,5 @@ def estimate_tokens(text: str) -> int:
     words = len(text.split())
     return max(1, round(words * 1.35))
 
+
+@dataclass(frozen=True)
