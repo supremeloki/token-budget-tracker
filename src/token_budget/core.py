@@ -42,3 +42,5 @@ class UsageRecord:
     recorded_at: float
 
     @property
+    def is_overhead(self) -> bool:
+        return self.role is Role.TOOL
