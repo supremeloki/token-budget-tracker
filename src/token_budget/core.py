@@ -41,3 +41,4 @@ class UsageRecord:
     tokens: int
     recorded_at: float
 
+    @property
