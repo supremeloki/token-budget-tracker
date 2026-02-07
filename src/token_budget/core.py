@@ -39,3 +39,5 @@ class UsageRecord:
     category: str
     role: Role
     tokens: int
+    recorded_at: float
+
