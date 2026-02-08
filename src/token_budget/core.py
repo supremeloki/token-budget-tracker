@@ -45,3 +45,5 @@ class UsageRecord:
     def is_overhead(self) -> bool:
         return self.role is Role.TOOL
 
+
+@dataclass
