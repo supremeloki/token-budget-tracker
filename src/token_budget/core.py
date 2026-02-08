@@ -47,3 +47,4 @@ class UsageRecord:
 
 
 @dataclass
+class CategoryBudget:
