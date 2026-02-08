@@ -48,3 +48,5 @@ class UsageRecord:
 
 @dataclass
 class CategoryBudget:
+    name: str
+    limit: int
