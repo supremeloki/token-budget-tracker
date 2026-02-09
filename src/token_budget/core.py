@@ -51,3 +51,5 @@ class CategoryBudget:
     name: str
     limit: int
     spent: int = 0
+
+    @property
