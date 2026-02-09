@@ -53,3 +53,4 @@ class CategoryBudget:
     spent: int = 0
 
     @property
+    def remaining(self) -> int:
