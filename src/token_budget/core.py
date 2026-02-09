@@ -50,3 +50,4 @@ class UsageRecord:
 class CategoryBudget:
     name: str
     limit: int
+    spent: int = 0
