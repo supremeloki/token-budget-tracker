@@ -56,3 +56,4 @@ class CategoryBudget:
     def remaining(self) -> int:
         return max(0, self.limit - self.spent)
 
+    @property
