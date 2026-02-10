@@ -57,3 +57,4 @@ class CategoryBudget:
         return max(0, self.limit - self.spent)
 
     @property
+    def utilization(self) -> float:
