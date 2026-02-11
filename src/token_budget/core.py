@@ -58,3 +58,5 @@ class CategoryBudget:
 
     @property
     def utilization(self) -> float:
+        if self.limit == 0:
+            return 0.0
