@@ -60,3 +60,4 @@ class CategoryBudget:
     def utilization(self) -> float:
         if self.limit == 0:
             return 0.0
+        return round(self.spent / self.limit, 4)
