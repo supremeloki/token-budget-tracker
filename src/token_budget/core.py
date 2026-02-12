@@ -63,3 +63,4 @@ class CategoryBudget:
         return round(self.spent / self.limit, 4)
 
 
+class TokenBudgetTracker:
