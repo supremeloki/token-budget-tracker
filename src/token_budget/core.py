@@ -66,3 +66,4 @@ class CategoryBudget:
 class TokenBudgetTracker:
     def __init__(self,
                  total_limit: int,
+                 allocations: dict[str, float] | None = None,
