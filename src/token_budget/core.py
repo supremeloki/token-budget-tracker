@@ -69,3 +69,4 @@ class TokenBudgetTracker:
                  allocations: dict[str, float] | None = None,
                  clock: Callable[[], float] | None = None) -> None:
         if total_limit < 1:
+            raise BudgetError("total limit must be >= 1")
