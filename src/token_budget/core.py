@@ -70,3 +70,5 @@ class TokenBudgetTracker:
                  clock: Callable[[], float] | None = None) -> None:
         if total_limit < 1:
             raise BudgetError("total limit must be >= 1")
+        self._clock = clock or time.time
+        self._records: list[UsageRecord] = []
