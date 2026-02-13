@@ -72,3 +72,4 @@ class TokenBudgetTracker:
             raise BudgetError("total limit must be >= 1")
         self._clock = clock or time.time
         self._records: list[UsageRecord] = []
+        shares = allocations or {"system": 0.15, "context": 0.55, "response": 0.30}
