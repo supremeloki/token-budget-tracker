@@ -73,3 +73,5 @@ class TokenBudgetTracker:
         self._clock = clock or time.time
         self._records: list[UsageRecord] = []
         shares = allocations or {"system": 0.15, "context": 0.55, "response": 0.30}
+        if abs(sum(shares.values()) - 1.0) > 0.001:
+            raise BudgetError("allocations must sum to 1.0")
