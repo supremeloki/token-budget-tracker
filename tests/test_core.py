@@ -70,3 +70,4 @@ def test_exhaustion_raises_with_details():
 
 def test_unknown_category_raises():
     tracker = TokenBudgetTracker(total_limit=100)
+    with pytest.raises(UnknownCategoryError):
