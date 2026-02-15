@@ -74,3 +74,4 @@ def test_unknown_category_raises():
         tracker.spend("vibes", "text")
 
 
+def test_refund_restores_capacity():
