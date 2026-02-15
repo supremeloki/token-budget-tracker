@@ -73,3 +73,4 @@ def test_unknown_category_raises():
     with pytest.raises(UnknownCategoryError):
         tracker.spend("vibes", "text")
 
+
