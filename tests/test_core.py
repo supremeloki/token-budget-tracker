@@ -78,3 +78,4 @@ def test_refund_restores_capacity():
     tracker = TokenBudgetTracker(total_limit=300)
     record = tracker.spend("response", "some long text here for tokens")
     tracker.refund(record)
+    report = tracker.report()
