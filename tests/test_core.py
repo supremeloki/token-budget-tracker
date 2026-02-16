@@ -79,3 +79,5 @@ def test_refund_restores_capacity():
     record = tracker.spend("response", "some long text here for tokens")
     tracker.refund(record)
     report = tracker.report()
+    assert report["response"]["spent"] == 0
+    assert len(tracker.records) == 0
