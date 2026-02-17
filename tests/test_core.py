@@ -83,3 +83,5 @@ def test_refund_restores_capacity():
     assert len(tracker.records) == 0
 
 
+def test_refund_untracked_raises():
+    tracker = TokenBudgetTracker(total_limit=100)
