@@ -81,3 +81,4 @@ def test_refund_restores_capacity():
     report = tracker.report()
     assert report["response"]["spent"] == 0
     assert len(tracker.records) == 0
+
