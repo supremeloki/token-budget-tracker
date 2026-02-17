@@ -85,3 +85,4 @@ def test_refund_restores_capacity():
 
 def test_refund_untracked_raises():
     tracker = TokenBudgetTracker(total_limit=100)
+    ghost = UsageRecord(category="response", role=Role.USER,
