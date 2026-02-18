@@ -89,3 +89,4 @@ def test_refund_untracked_raises():
                         tokens=5, recorded_at=1.0)
     with pytest.raises(BudgetError):
         tracker.refund(ghost)
+
