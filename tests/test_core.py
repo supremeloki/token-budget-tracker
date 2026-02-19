@@ -94,3 +94,4 @@ def test_refund_untracked_raises():
 def test_report_utilization_grows():
     tracker = TokenBudgetTracker(total_limit=400)
     tracker.spend("system", 40)
+    report = tracker.report()
