@@ -91,3 +91,5 @@ def test_refund_untracked_raises():
         tracker.refund(ghost)
 
 
+def test_report_utilization_grows():
+    tracker = TokenBudgetTracker(total_limit=400)
