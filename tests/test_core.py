@@ -95,3 +95,5 @@ def test_report_utilization_grows():
     tracker = TokenBudgetTracker(total_limit=400)
     tracker.spend("system", 40)
     report = tracker.report()
+    assert 0.5 < report["system"]["utilization"] < 0.8
+    assert report["system"]["remaining"] < report["system"]["limit"]
