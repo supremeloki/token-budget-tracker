@@ -99,3 +99,5 @@ def test_report_utilization_grows():
     assert report["system"]["remaining"] < report["system"]["limit"]
 
 
+def test_can_afford_checks_category():
+    tracker = TokenBudgetTracker(total_limit=500)
