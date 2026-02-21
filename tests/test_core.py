@@ -105,3 +105,4 @@ def test_can_afford_checks_category():
     assert not tracker.can_afford("response", 10_000)
     assert not tracker.can_afford("nope", 1)
 
+
