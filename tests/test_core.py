@@ -102,3 +102,4 @@ def test_report_utilization_grows():
 def test_can_afford_checks_category():
     tracker = TokenBudgetTracker(total_limit=500)
     assert tracker.can_afford("response", 100)
+    assert not tracker.can_afford("response", 10_000)
