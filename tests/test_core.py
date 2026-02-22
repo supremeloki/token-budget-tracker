@@ -106,3 +106,4 @@ def test_can_afford_checks_category():
     assert not tracker.can_afford("nope", 1)
 
 
+def test_projection_limits_calls():
