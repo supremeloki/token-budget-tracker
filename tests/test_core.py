@@ -111,3 +111,5 @@ def test_projection_limits_calls():
     projected = tracker.projection_at_rate(tokens_per_call=50,
                                            calls_planned=20)
     assert projected <= tracker.report()["response"]["limit"]
+    assert projected % 50 == 0
+
