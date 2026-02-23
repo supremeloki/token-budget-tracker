@@ -109,3 +109,4 @@ def test_can_afford_checks_category():
 def test_projection_limits_calls():
     tracker = TokenBudgetTracker(total_limit=1000)
     projected = tracker.projection_at_rate(tokens_per_call=50,
+                                           calls_planned=20)
