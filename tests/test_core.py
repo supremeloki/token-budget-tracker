@@ -114,3 +114,4 @@ def test_projection_limits_calls():
     assert projected % 50 == 0
 
 
+def test_records_timestamped_in_order():
