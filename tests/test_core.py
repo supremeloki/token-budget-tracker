@@ -117,3 +117,4 @@ def test_projection_limits_calls():
 def test_records_timestamped_in_order():
     clock = FakeClock()
     tracker = TokenBudgetTracker(total_limit=500, clock=clock)
+    tracker.spend("system", "first")
