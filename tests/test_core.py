@@ -119,3 +119,5 @@ def test_records_timestamped_in_order():
     tracker = TokenBudgetTracker(total_limit=500, clock=clock)
     tracker.spend("system", "first")
     tracker.spend("system", "second")
+    stamps = [r.recorded_at for r in tracker.records]
+    assert stamps[0] < stamps[1]
